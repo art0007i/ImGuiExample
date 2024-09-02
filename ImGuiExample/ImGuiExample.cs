@@ -1,11 +1,8 @@
 using ResoniteModLoader;
-using ImGuiUnityInject;
 using ImGuiNET;
 using FrooxEngine;
 using Elements.Core;
-using UnityEngine.SceneManagement;
-using System.Linq;
-using UnityFrooxEngineRunner;
+using ResoniteImGuiLib;
 
 namespace ImGuiExample;
 
@@ -19,12 +16,7 @@ public class ImGuiExample : ResoniteMod
     {
         string msg = "Hello World";
         bool show = true;
-        ImGuiInstance.GetOrCreate((gui, isNew) =>
-        {
-            if (!isNew) return;
-            gui._camera = SceneManager.GetActiveScene().GetRootGameObjects().Where(go => go.name == "FrooxEngine").First().GetComponent<FrooxEngineRunner>().OverlayCamera;
-            gui.enabled = true;
-        }).Layout += () =>
+        ImGuiLib.GetOrCreateInstance().Layout += () =>
         {
             ImGui.Begin("ImGuiExample Window");
             ImGui.InputText("Message Text", ref msg, 1000);

@@ -34,11 +34,8 @@
 		<Reference Include="ImGuiUnityInject.dll">
 			<HintPath>$(GamePath)rml_libs/ImGuiUnityInject.dll</HintPath>
 		</Reference>
-		<Reference Include="UnityEngine.CoreModule.dll">
-			<HintPath>$(GamePath)Resonite_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
-		</Reference>
-		<Reference Include="UnityFrooxEngineRunner.dll">
-			<HintPath>$(GamePath)Resonite_Data/Managed/UnityFrooxEngineRunner.dll</HintPath>
+		<Reference Include="ResoniteImGuiLib">
+			<HintPath>$(GamePath)rml_mods/ResoniteImGuiLib.dll</HintPath>
 		</Reference>
   </ItemGroup>
 
