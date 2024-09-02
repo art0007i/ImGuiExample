@@ -1,6 +1,6 @@
 # ImGuiExample
 
-A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that creates a simple ImGui window using [ImGuiUnityInject](https://github.com/art0007i/ImGuiUnityInject).
+A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that creates a simple ImGui window using [ResoniteImGuiLib](https://github.com/art0007i/ResoniteImGuiLib).
 
 ## Installation
 1. Install [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader).
